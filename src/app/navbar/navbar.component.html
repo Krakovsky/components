@@ -1,0 +1,11 @@
+<ul class="navbar navbar_vertical">
+	<li class="navbar__item" *ngFor = "let name of navbarNamesPages">
+		<a class="navbar__link" href="{{name.path}}">{{name.name}}</a>
+	</li>
+</ul>
+
+<ul class="navbar navbar_horizontal">
+	<li class="navbar__item" *ngFor = "let name of navbarNamesPages">
+		<a class="navbar__link" href="{{name.path}}">{{name.name}}</a>
+	</li>
+</ul>
