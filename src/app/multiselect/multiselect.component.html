@@ -1,0 +1,53 @@
+<sm-select
+    placeholder="Select city..." 
+    class="fluid search multiple"
+    (onChange)="onChange($event)">
+    <option *ngFor="let city of nameCities">{{city.cityName}}</option>
+</sm-select>
+
+<button class="ui button green" (click)="myModal.show()">Click me</button>
+<sm-modal title="Hello from Modal" class="basic" #myModal>
+    <modal-content>
+    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ratione officia consequatur beatae, rem atque, cum qui, accusantium delectus nam ullam explicabo mollitia neque voluptatum? Quis animi id quos nobis.
+    </modal-content>
+</sm-modal>
+
+<form>
+    <div class="nativeDatePicker">
+      <label for="bday">Enter your birthday:</label>
+      <input type="date" id="bday" name="bday">
+      <span class="validity"></span>
+    </div>
+    <p class="fallbackLabel">Enter your birthday:</p>
+    <div class="fallbackDatePicker">
+      <span>
+        <label for="day">Day:</label>
+        <select id="day" name="day">
+        </select>
+      </span>
+      <span>
+        <label for="month">Month:</label>
+        <select id="month" name="month">
+          <option selected>January</option>
+          <option>February</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option>December</option>
+        </select>
+      </span>
+      <span>
+        <label for="year">Year:</label>
+        <select id="year" name="year">
+        </select>
+      </span>
+    </div>
+</form>
+
+
